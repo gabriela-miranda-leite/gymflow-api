@@ -17,3 +17,6 @@ coverage.html
 # IDE
 .idea/
 .vscode/
+
+# Air
+tmp/

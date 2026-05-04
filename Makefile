@@ -3,7 +3,7 @@ BINARY=bin/api
 .PHONY: run build test lint migrate-up seed
 
 run:
-	go run ./cmd/api
+	$(HOME)/go/bin/air
 
 build:
 	go build -o $(BINARY) ./cmd/api

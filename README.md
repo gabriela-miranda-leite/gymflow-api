@@ -19,13 +19,23 @@ API backend do GymFlow construída em Go com Clean Architecture.
    cd gymflow-api
    ```
 
-2. Copie o arquivo de variáveis de ambiente:
+2. Suba o banco de dados com Docker:
+   ```bash
+   docker-compose up -d
+   ```
+
+3. Copie o arquivo de variáveis de ambiente:
    ```bash
    cp .env.example .env
    ```
    Edite `.env` com suas configurações locais.
 
-3. Inicie o servidor:
+4. Instale o `air` para hot reload:
+   ```bash
+   go install github.com/air-verse/air@latest
+   ```
+
+5. Inicie o servidor em modo desenvolvimento:
    ```bash
    make run
    ```
