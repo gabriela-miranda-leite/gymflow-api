@@ -1,5 +1,7 @@
 # gymflow-api
 
+[![CI](https://github.com/gabriela-miranda-leite/gymflow-api/actions/workflows/ci.yml/badge.svg)](https://github.com/gabriela-miranda-leite/gymflow-api/actions/workflows/ci.yml)
+
 API backend do GymFlow construída em Go com Clean Architecture.
 
 ## Pré-requisitos
