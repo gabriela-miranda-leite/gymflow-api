@@ -28,6 +28,14 @@ API backend do GymFlow construída em Go com Clean Architecture.
    make run
    ```
 
+## Pre-commit hook
+
+Instale o hook para que o lint rode automaticamente antes de cada commit:
+
+```bash
+pre-commit install
+```
+
 ## Comandos disponíveis
 
 | Comando           | Descrição                                 |
