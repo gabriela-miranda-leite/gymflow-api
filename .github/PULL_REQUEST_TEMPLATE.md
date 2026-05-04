@@ -2,15 +2,10 @@
 
 <!-- Descreva de forma clara o que foi implementado ou corrigido -->
 
-## Tipo de mudança
-
-- [ ] `feat` — nova funcionalidade
-- [ ] `fix` — correção de bug
-- [ ] `chore` — configuração, tooling, refactor sem impacto funcional
-- [ ] `docs` — documentação
-- [ ] `test` — testes
-
 ## Task relacionada
+
+- Jira: [GYM-XXX](https://gabrielamiranda1110.atlassian.net/browse/GYM-XXX)
+- Confluence: [GYM-XXX](https://gabrielamiranda1110.atlassian.net/wiki/spaces/GYM/pages/GYM-XXX)
 
 Closes GYM-XXX
 
