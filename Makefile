@@ -1,6 +1,9 @@
+include .env
+export
+
 BINARY=bin/api
 
-.PHONY: run build test lint migrate-up seed
+.PHONY: run build test lint migrate-up migrate-down seed
 
 run:
 	$(HOME)/go/bin/air
@@ -18,5 +21,8 @@ lint:
 migrate-up:
 	migrate -path migrations -database "$(DATABASE_URL)" up
 
+migrate-down:
+	migrate -path migrations -database "$(DATABASE_URL)" down -all
+
 seed:
-	go run ./scripts/seed
+	psql "$(DATABASE_URL)" -f migrations/seed.sql
