@@ -9,6 +9,10 @@ bin/
 # Vendor
 vendor/
 
+# Coverage
+coverage.out
+coverage.html
+
 # IDE
 .idea/
 .vscode/

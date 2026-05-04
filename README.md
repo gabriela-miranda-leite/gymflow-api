@@ -28,6 +28,29 @@ API backend do GymFlow construída em Go com Clean Architecture.
    make run
    ```
 
+## Testes
+
+Execute os testes e gere o relatório de cobertura:
+
+```bash
+make test
+```
+
+Isso gera dois arquivos:
+- `coverage.out` — dados brutos de cobertura
+- `coverage.html` — relatório visual (abra no browser para ver quais linhas foram testadas)
+
+### Padrão de teste (Arrange / Act / Assert)
+
+```go
+func TestNomeDoComportamento(t *testing.T) {
+    // Arrange — prepara os dados
+    // Act     — executa o que está sendo testado
+    // Assert  — verifica o resultado com testify
+    assert.Equal(t, expected, got)
+}
+```
+
 ## Pre-commit hook
 
 Instale o hook para que o lint rode automaticamente antes de cada commit:

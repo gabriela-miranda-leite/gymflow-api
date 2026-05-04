@@ -9,7 +9,8 @@ build:
 	go build -o $(BINARY) ./cmd/api
 
 test:
-	go test ./...
+	go test ./... -v -coverprofile=coverage.out
+	go tool cover -html=coverage.out -o coverage.html
 
 lint:
 	golangci-lint run ./...
