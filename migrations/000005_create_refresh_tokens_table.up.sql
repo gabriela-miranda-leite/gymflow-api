@@ -6,3 +6,5 @@ CREATE TABLE refresh_tokens (
     revoked    BOOLEAN     NOT NULL DEFAULT false,
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
+
+CREATE INDEX idx_refresh_tokens_user_id ON refresh_tokens(user_id);
